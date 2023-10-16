@@ -1,0 +1,212 @@
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/* GENERAL */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+}
+
+/* CONTAINER */
+
+.summary {
+    margin: 10rem auto 3rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-shadow: 5px 5px 5px hsl(221, 100%, 96%);
+}
+
+/* SCORE DISPLAY */
+
+.graphic {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+    height: 27rem;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.graphic h3 {
+    margin-top: 0;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+.graphic .circle {
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+.graphic .circle * {
+    margin: 0;
+}
+
+.graphic .circle h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.graphic p {
+    color: hsl(241, 100%, 89%);
+}
+
+.graphic, .summary {
+    border-radius: 2rem;
+}
+
+/* DETAILS OF SCORE */
+
+.details {
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.details h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.details ul {
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.details ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.details ul li.cat-1 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.details ul li.cat-2 {
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.details ul li.cat-3 {
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.details ul li.cat-4 {
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.details ul li .head {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.details ul li .head img {
+    margin-right: .5rem;
+}
+
+.details ul li .text-1 {
+    color: hsl(0, 100%, 67%);
+}
+
+.details ul li .text-2 {
+    color: hsl(39, 100%, 56%);
+}
+.details ul li .text-3 {
+    color: hsl(166, 100%, 37%);
+}
+.details ul li .text-4 {
+    color: hsl(234, 85%, 45%);
+}
+
+.details ul li .bold {
+    font-weight: 700;
+}
+
+.details button {
+    width: 100%;
+    padding: .8rem 0;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.details button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* FOOTER */
+
+.attribution {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(166, 100%, 37%);
+}
+
+.attribution a:hover {
+    color: hsl(0, 100%, 67%);
+}
+
+.attribution p {
+    font-weight: 700;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .graphic {
+        width: 100%;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .details {
+        width: 100%;
+    }
+}
